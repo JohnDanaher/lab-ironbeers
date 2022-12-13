@@ -1,7 +1,7 @@
 <ul>
-{{#each brewskies}}
-<li>
-<p><img src="{{image_url}}" alt="beer"> {{name}} {{description}} {{tagline}}</p>
-</li>
-{{/each}}
-</ul>
+ {{#each brewskies}}
+ <li>
+    <p>{{> beerpartial this}}</p>
+    </li>
+    {{/each}}
+    </ul>
